@@ -11,12 +11,12 @@ module.exports = {
     // allows token to be sent via  req.query or headers
     let token =
       req?.body?.token || req?.query?.token || req.headers.authorization;
-    // console.log("token", token);
-
-    // ["Bearer", "<tokenvalue>"]
-    if (req.headers.authorization) {
+    
       token = token.split(" ").pop().trim();
-    }
+    
+    // if (req.req.headers.authorization) {
+    //   token = token.split(" ").pop().trim();
+    // }
 
     if (!token) {
       return req
@@ -25,7 +25,9 @@ module.exports = {
     // don't verify for all requests
     try {
       const { data } = jwt.decode(token, secret);
-      return { user: data };
+      // req.user = data;
+      // return data
+      return {...req, data};
     } catch (err) {
       console.log(err);
       console.log("Invalid token");
