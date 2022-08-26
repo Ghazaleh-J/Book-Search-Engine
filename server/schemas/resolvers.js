@@ -15,8 +15,10 @@ const resolvers = {
     },
     Mutation: {
         //Create user
-        addUser: async (parent, {username, email, password}) => {
+        addUser: async (parent, {username, email, password}, context) => {
+            console.log("USER FROM CONTEXT", context)
             const user = await User.create({username, email, password});
+            console.log(user)
             if (!user) {
                 return res.status(400).json({ message: 'Something is wrong!' });
             }
