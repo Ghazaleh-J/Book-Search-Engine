@@ -20,7 +20,7 @@ With the starter code with a fully functioning Google Books API search engine bu
 * By clicking on the Logout button,then you're logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
 
 ## Link
-* [Heroku Deployed Page](pending)
+* [Heroku Deployed Page](https://book-search-enginee-hw.herokuapp.com/)
 
 ## Site Preview
 ![alt text](./client/src/asset/1.png)
