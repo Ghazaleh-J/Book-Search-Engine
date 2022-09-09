@@ -19,8 +19,22 @@ With the starter code with a fully functioning Google Books API search engine bu
 * By clicking on the Remove button on a book, that book is deleted from your saved books list
 * By clicking on the Logout button,then you're logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
 
+## Installation
+* Copy the repository to your system
+* Create .env file
+     - SET MONGODB_URI to mongoDB URI
+* npm install
+* npm run dev
+
+## Technologies
+* MongoDB
+* Express
+* React
+* Node
+* GrpahQL
+
 ## Link
 * [Heroku Deployed Page](https://book-search-enginee-hw.herokuapp.com/)
 
-## Site Preview
+## Application Preview
 ![alt text](./client/src/asset/1.png)
